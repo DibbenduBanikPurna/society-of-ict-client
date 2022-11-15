@@ -4,10 +4,10 @@ const Teachers = ({data}) => {
     return (
         <div className='col-md-4'>
             <div className='card'>
-                <img src={data.pic} alt=""/>
+                <img className='img-fluid rounded-circle' src={data.pic} alt=""/>
                 <div className='card-body'>
                     <p>Name:{data.name}</p>
-                    <span>{data.post}</span>
+                    <p>{data.post}</p>
                     <p>Email:{data.email}</p>
                     <span>Contact-No:{data.no}</span>
                 </div>

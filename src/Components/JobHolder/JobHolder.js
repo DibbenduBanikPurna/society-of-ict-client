@@ -11,7 +11,7 @@ const JobHolder = () => {
             setJobPeople(data)
         })
     return (
-        <div className='container'>
+        <div className='container bg-light'>
             <div className='row mt-2'>
                 {
                     jobpeople.map((job=>{

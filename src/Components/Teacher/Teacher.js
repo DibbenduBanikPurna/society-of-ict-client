@@ -15,7 +15,7 @@ const Teacher = () => {
     
     return (
         <div className='container'>
-            <div className='row'>
+            <div className='row bg-light'>
                 
                 {
                     teacher.map((t)=>{

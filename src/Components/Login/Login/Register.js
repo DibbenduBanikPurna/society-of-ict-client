@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
-import CircularProgress from '@mui/material/CircularProgress';
+
 import { Link } from 'react-router-dom';
 
-import Alert from '@mui/material/Alert';
+
 import { useHistory } from 'react-router-dom';
 import useFirebase from '../../../Hooks/UseFirebase';
 const Register = () => {
@@ -33,11 +33,14 @@ const Register = () => {
             return;
         }
         signUp(loginData.name, loginData.email, loginData.password, history)
+        alert("Registered Successfully");
+        history.push('/addmember')
     }
     return (
+        <div className=''>
         <div className='container'>
-        <div className='row'>
-            <div className='col-md-4 m-auto'>
+        <div className='row vh-100 bg-light'>
+            <div className='col-md-4 m-auto pt-5'>
                 <p className='text-center'>Register</p>
                 {!isLoading && <form onSubmit={handleLogInSubmit}>
                     <TextField name="name" type="text" onChange={handleChange} sx={{ width: 1, m: 1 }} id="standard-basic" label="Your Name" variant="standard" />
@@ -49,16 +52,14 @@ const Register = () => {
 
                     <Link to="/">  <Button color="inherit">ALready Sign Up?PLEASE LOGIN</Button> </Link>
                 </form>}
-                {isLoading && <CircularProgress />}
-                {/* {user.email && <Alert severity="success">User Created Successfully</Alert>}
-                {
-                    authError && <Alert severity="error">{authError}!</Alert>
-                } */}
+               
+              
             </div>
 
           
         </div>
 
+    </div>
     </div>
     );
 };

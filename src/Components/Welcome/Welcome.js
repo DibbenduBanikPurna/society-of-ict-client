@@ -4,15 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 
 const Welcome = () => {
-    // const date=new Date().toLocaleTimeString()
-    // const dates=new Date()
-    // const p=dates.getHours()
-    // console.log(p)
-    // let time='close';
-    // if(p>=10 && p<17)
-    // {
-    //     time='open'
-    // }
+   
     return (
         
      
