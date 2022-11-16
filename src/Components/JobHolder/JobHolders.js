@@ -7,6 +7,7 @@ const JobHolders = ({data}) => {
                 <img src={data.pic} alt=""/>
                 <div className='card-body mt-5'>
                     <p>Name:{data.name}</p>
+                    <p>Email:{data.email}</p>
                     <p>Batch:{data.batch}</p>
                     <p>Company:{data.company}</p>
                     <span>Post:{data.post}</span>
