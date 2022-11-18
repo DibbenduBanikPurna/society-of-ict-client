@@ -38,7 +38,7 @@ const Login = () => {
     const handleLogInSubmit = (e) => {
         e.preventDefault()
         signIn(loginData.email, loginData.password, location, history)
-        alert('Login  Successfull');
+        //alert('Login  Successfull');
         // {
         //     done ?  history.push('/addmember') :history.push('/studentinfo')
         // }
